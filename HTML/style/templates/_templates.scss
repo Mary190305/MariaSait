@@ -1,0 +1,60 @@
+$main-color: #598D66;
+
+%picture_stroke_elem{
+        border: #E1EDE6 solid;
+        background-color: #E1EDE6;
+        padding: 2%;
+        margin: auto;
+
+        & p:nth-of-type(1){
+            font-size: 18px;
+            color: #86928B;
+        }
+
+        & p:nth-of-type(2){
+            font-size: 30px;
+            margin-top: -2%;
+            margin-bottom: -2%;
+        }
+
+        & p:nth-of-type(3){
+            font-size: 18px;
+            margin-bottom: 10%;
+        }
+
+        & p:nth-of-type(4){
+            font-size: 24px;
+            color: #598D66;
+        }
+
+        & p:nth-of-type(5){
+            border: #598D66 solid;
+            text-align: center;
+            color: #598D66;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+}
+
+%display{
+    display: flex;
+    flex-direction: row;
+}
+
+%new_about_us{
+    margin-left: 15%;
+
+    & p:first-child{
+        font-size: 20px;
+    }
+
+    & p:nth-of-type(2), & p:last-child{
+        font-size: 18px;
+        color: #86928B;
+    }
+}
+
+@font-face {
+	font-family: 'Raleway'; 
+	src: url(fonts/Raleway.ttf); 
+}
