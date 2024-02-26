@@ -1,0 +1,51 @@
+.our_team{
+    @extend %display;
+    margin-bottom: 5%;
+
+    .our_team_elem1{
+        margin-left: 2%;
+        margin-top: 7%;
+
+        & p:first-child{
+            font-size: 40px;
+            margin-bottom: 5%;
+        }
+
+        & p:last-child{
+            font-size: 18px;
+            line-height: 1.75px;
+        }
+
+        .ellipse{
+            @extend %display;
+            margin-top: 5%;
+
+            & p:nth-of-type(1), & p:nth-of-type(2), & p:nth-of-type(3){
+                width: 80px; 
+                height: 80px;
+                background: #D9D9D9;
+                border-radius: 50%;
+                margin: auto;
+            }
+
+            & p:nth-of-type(1){
+                background-image: url('../style/pictures/Работник\ 1.png');
+                background-size: contain;
+                margin-left: 0;
+            }
+
+            & p:nth-of-type(2){
+                background-image: url('../style/pictures/Работник\ 2.jpg');
+                background-size: contain;
+                margin-left: -35%;
+                margin-right: -35%;
+            }
+
+            & p:nth-of-type(3){
+                background-image: url('../style/pictures/Работник\ 3.jpg');
+                background-size: contain;
+                
+            }
+        }
+    }
+}
